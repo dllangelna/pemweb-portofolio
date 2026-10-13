@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Hubungi Dilla Angelina - Formulir kontak dan informasi komunikasi."
+    />
+    <title>Hubungi Saya | Dilla Angelina</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ==================== NAVBAR (FLEXBOX) ==================== -->
+    <header class="header-nav">
+      <div class="container">
+        <nav class="navbar">
+          <!-- Logo / Nama Brand -->
+          <a href="index.html" class="brand-logo"
+            >Dilla <span>Angelina</span></a
+          >
+
+          <!-- Menu Navigasi (Flexbox) -->
+          <ul class="nav-links">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="contact.html" class="nav-link active">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ==================== KONTEN UTAMA ==================== -->
+    <main>
+      <section class="contact-section">
+        <div class="container">
+          <!-- Header Bagian Kontak -->
+          <div class="section-header">
+            <h1 class="section-title">Hubungi Saya</h1>
+            <p class="section-desc">
+              Silakan tinggalkan pesan atau pertanyaan Anda melalui formulir
+              kontak di bawah ini.
+            </p>
+          </div>
+
+          <!-- Layout Kontak (Info Kontak + Formulir) -->
+          <div class="contact-layout">
+            <!-- Kolom Kiri: Informasi Kontak -->
+            <div class="contact-info">
+              <h3>Informasi Kontak</h3>
+              <p>
+                Anda dapat menghubungi saya secara langsung melalui kontak
+                berikut:
+              </p>
+
+              <div class="info-item">
+                <div class="info-label">Email</div>
+                <div class="info-val">25091397095@mhs.unesa.ac.id</div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-label">WhatsApp / Telepon</div>
+                <div class="info-val">+62 857-4194-6929</div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-label">Lokasi</div>
+                <div class="info-val">Surabaya, Jawa Timur, Indonesia</div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-label">Status</div>
+                <div class="info-val">Mahasiswa Aktif</div>
+              </div>
+            </div>
+
+            <!-- Kolom Kanan: Formulir Kontak (Nama, Email, Pesan) -->
+            <div class="contact-form-card">
+              <h3>Kirim Pesan</h3>
+              <p>Isi formulir berikut dengan data yang benar.</p>
+
+              <!-- Alert Sukses (Akan tampil setelah submit) -->
+              <div id="alertSuccess" class="alert-success">
+                Pesan Anda berhasil dikirim! Terima kasih telah menghubungi
+                saya.
+              </div>
+
+              <form id="contactForm" action="#" method="POST">
+                <!-- Input Nama -->
+                <div class="form-group">
+                  <label for="name" class="form-label">Nama Lengkap</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="form-input"
+                    placeholder="Masukkan nama Anda"
+                    required
+                  />
+                </div>
+
+                <!-- Input Email -->
+                <div class="form-group">
+                  <label for="email" class="form-label">Alamat Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="form-input"
+                    placeholder="contoh@domain.com"
+                    required
+                  />
+                </div>
+
+                <!-- Input Pesan -->
+                <div class="form-group">
+                  <label for="message" class="form-label">Isi Pesan</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    class="form-textarea"
+                    placeholder="Tuliskan pesan Anda di sini..."
+                    required
+                  ></textarea>
+                </div>
+
+                <!-- Tombol Submit -->
+                <button
+                  type="submit"
+                  class="btn btn-primary"
+                  style="width: 100%"
+                >
+                  Kirim Pesan
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; 2026 Dilla Angelina - Pemrograman Website</p>
+      </div>
+    </footer>
+
+    <!-- JavaScript Sederhana untuk Validasi & Notifikasi Form -->
+    <script>
+      const form = document.getElementById("contactForm");
+      const alertBox = document.getElementById("alertSuccess");
+
+      if (form) {
+        form.addEventListener("submit", function (e) {
+          e.preventDefault(); // Mencegah reload halaman
+
+          // Tampilkan pesan sukses
+          alertBox.style.display = "block";
+
+          // Kosongkan formulir
+          form.reset();
+
+          // Sembunyikan pesan setelah 5 detik
+          setTimeout(function () {
+            alertBox.style.display = "none";
+          }, 5000);
+        });
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Tentang Dilla Angelina - Profil, latar belakang, dan keahlian web development."
+    />
+    <title>Tentang Saya | Dilla Angelina</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ==================== NAVBAR (FLEXBOX) ==================== -->
+    <header class="header-nav">
+      <div class="container">
+        <nav class="navbar">
+          <!-- Logo / Nama Brand -->
+          <a href="index.html" class="brand-logo"
+            >Dilla <span>Angelina</span></a
+          >
+
+          <!-- Menu Navigasi (Flexbox) -->
+          <ul class="nav-links">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link active">About</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ==================== KONTEN UTAMA ==================== -->
+    <main>
+      <section class="about-section">
+        <div class="container">
+          <!-- Header Bagian -->
+          <div class="section-header">
+            <h1 class="section-title">Tentang Saya</h1>
+            <p class="section-desc">
+              Perkenalan singkat mengenai profil diri dan ketertarikan saya di
+              bidang teknologi.
+            </p>
+          </div>
+
+          <!-- ==================== FOTO + DESKRIPSI (MENGGUNAKAN FLEXBOX) ==================== -->
+          <div class="about-flex-container">
+            <!-- Foto Profil (Kiri) -->
+            <div class="about-photo-wrapper">
+              <img
+                src="assets/profile.jpg"
+                alt="Foto Profil Dilla Angelina"
+                class="about-photo"
+              />
+            </div>
+
+            <!-- Deskripsi Diri (Kanan) -->
+            <div class="about-text-content">
+              <h2 class="about-name">Dilla Angelina</h2>
+              <div class="about-role">Mahasiswa</div>
+
+              <p class="about-paragraph">
+                Halo! Saya Dilla Angelina, mahasiswi yang saat ini sedang aktif
+                menempuh perkuliahan dan punya ketertarikan besar di dunia
+                teknologi.
+              </p>
+
+              <p class="about-paragraph">
+                Di perkuliahan, saya banyak belajar seputar logika pemrograman,
+                dasar komputasi, hingga perancangan tampilan web yang rapi dan
+                responsif. Lewat tugas-tugas praktikum dan proyek latihan, saya
+                terbiasa memecahkan kendala teknis lewat kode, baik saat
+                mengerjakannya secara mandiri maupun berkolaborasi dalam tim.
+              </p>
+
+              <p class="about-paragraph">
+                Dunia teknologi itu sangat luas, dan saat ini saya masih
+                menikmati proses mengeksplorasi berbagai hal untuk menemukan
+                bidang yang paling saya minati. Website portofolio ini saya buat
+                sebagai wadah sederhana untuk mendokumentasikan proses belajar,
+                tugas perkuliahan, dan proyek latihan yang saya kerjakan.
+              </p>
+
+              <div style="margin-top: 20px">
+                <a href="contact.html" class="btn btn-primary">Hubungi Saya</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bagian Keahlian / Kompetensi -->
+          <div class="skills-section">
+            <div class="section-header" style="margin-bottom: 25px">
+              <h2 class="section-title" style="font-size: 1.5rem">
+                Keahlian yang Dipelajari
+              </h2>
+              <p class="section-desc">
+                Teknologi dan keterampilan dasar yang saya kuasai selama masa
+                perkuliahan.
+              </p>
+            </div>
+
+            <div class="skills-grid">
+              <div class="skill-card">
+                <h3 class="skill-title">HTML5 Dasar</h3>
+                <p class="skill-desc">
+                  Penggunaan elemen semantik untuk menyusun struktur halaman web
+                  yang teratur dan rapi.
+                </p>
+              </div>
+
+              <div class="skill-card">
+                <h3 class="skill-title">CSS3 Styling</h3>
+                <p class="skill-desc">
+                  Pengaturan warna, tipografi, jarak (margin & padding), border,
+                  dan efek visual dasar.
+                </p>
+              </div>
+
+              <div class="skill-card">
+                <h3 class="skill-title">Flexbox & CSS Grid</h3>
+                <p class="skill-desc">
+                  Penerapan tata letak 1 dimensi (Flexbox) dan 2 dimensi (Grid)
+                  untuk penataan komponen.
+                </p>
+              </div>
+
+              <div class="skill-card">
+                <h3 class="skill-title">Responsive Design</h3>
+                <p class="skill-desc">
+                  Penggunaan CSS Media Queries untuk menyesuaikan tampilan di
+                  desktop, tablet, dan smartphone.
+                </p>
+              </div>
+
+              <div class="skill-card">
+                <h3 class="skill-title">JavaScript Dasar</h3>
+                <p class="skill-desc">
+                  Interaktivitas halaman web, event handling, serta manipulasi
+                  dokumen (DOM).
+                </p>
+              </div>
+
+              <div class="skill-card">
+                <h3 class="skill-title">Git & Version Control</h3>
+                <p class="skill-desc">
+                  Pengelolaan repositori kode tugas dan proyek latihan secara
+                  teratur.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; 2026 Dilla Angelina - Pemrograman Website.</p>
+      </div>
+    </footer>
+  </body>
+</html>

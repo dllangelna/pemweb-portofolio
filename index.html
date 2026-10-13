@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portofolio Dilla Angelina - Mahasiswa Web Development. Kumpulan tugas dan proyek latihan website responsif."
+    />
+    <title>Dilla Angelina | Portofolio Web</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ==================== NAVBAR (FLEXBOX) ==================== -->
+    <header class="header-nav">
+      <div class="container">
+        <nav class="navbar">
+          <!-- Logo / Nama Brand -->
+          <a href="index.html" class="brand-logo"
+            >Dilla <span>Angelina</span></a
+          >
+
+          <!-- Menu Navigasi (Flexbox) -->
+          <ul class="nav-links">
+            <li><a href="index.html" class="nav-link active">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ==================== KONTEN UTAMA ==================== -->
+    <main>
+      <!-- Hero Section: Perkenalan Singkat -->
+      <section class="hero-section">
+        <div class="container">
+          <div class="hero-subtitle">Portofolio Mahasiswa</div>
+          <h1 class="hero-title">Halo, Saya Dilla Angelina</h1>
+          <p class="hero-desc">
+            Selamat datang di website portofolio saya. Di sini saya membagikan
+            profil diri, proses belajar perkuliahan, serta beberapa hasil karya
+            dan tugas latihan yang telah saya selesaikan.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">Lihat Proyek</a>
+            <a href="contact.html" class="btn btn-secondary">Hubungi Saya</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section: Grid 3 Card (CSS Grid) -->
+      <section class="projects-section" id="projects">
+        <div class="container">
+          <!-- Header Bagian Proyek -->
+          <div class="section-header">
+            <h2 class="section-title">Portofolio Pilihan</h2>
+            <p class="section-desc">
+              Beberapa hasil latihan dan tugas pembuatan halaman website
+              responsif.
+            </p>
+          </div>
+
+          <!-- Portofolio Grid: 
+             - Desktop: 3 kolom
+             - Tablet: 2 kolom
+             - Mobile: 1 kolom 
+        -->
+          <div class="portfolio-grid">
+            <!-- Card Proyek 1 -->
+            <article class="project-card">
+              <img
+                src="assets/project-ecommerce.jpg"
+                alt="Mockup Halaman Toko Online"
+                class="project-img"
+              />
+              <div class="project-body">
+                <span class="project-category">E-Commerce</span>
+                <h3 class="project-title">Website Toko Online</h3>
+                <p class="project-desc">
+                  Desain tata letak halaman etalase produk dan keranjang belanja
+                  sederhana yang terstruktur menggunakan CSS Grid dan Flexbox.
+                </p>
+                <a href="contact.html" class="project-link"
+                  >Lihat Detail &rarr;</a
+                >
+              </div>
+            </article>
+
+            <!-- Card Proyek 2 -->
+            <article class="project-card">
+              <img
+                src="assets/project-dashboard.jpg"
+                alt="Mockup Dashboard Penjualan"
+                class="project-img"
+              />
+              <div class="project-body">
+                <span class="project-category">Dashboard Web</span>
+                <h3 class="project-title">Dashboard Penjualan Sederhana</h3>
+                <p class="project-desc">
+                  Tampilan ringkasan data penjualan dan statistik bulanan dengan
+                  susunan kartu informatif yang rapi di berbagai ukuran layar.
+                </p>
+                <a href="contact.html" class="project-link"
+                  >Lihat Detail &rarr;</a
+                >
+              </div>
+            </article>
+
+            <!-- Card Proyek 3 -->
+            <article class="project-card">
+              <img
+                src="assets/project-taskapp.jpg"
+                alt="Mockup Aplikasi To-Do List"
+                class="project-img"
+              />
+              <div class="project-body">
+                <span class="project-category">Aplikasi Web</span>
+                <h3 class="project-title">Aplikasi Catatan & To-Do</h3>
+                <p class="project-desc">
+                  Latihan pembuatan aplikasi daftar tugas interaktif menggunakan
+                  manipulasi DOM JavaScript dasar untuk mencatat aktivitas
+                  harian.
+                </p>
+                <a href="contact.html" class="project-link"
+                  >Lihat Detail &rarr;</a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; 2026 Dilla Angelina - Pemrograman Website.</p>
+      </div>
+    </footer>
+  </body>
+</html>
